@@ -10,13 +10,13 @@ Generate fibonacci series using lru caching mechanism
 if n == 0:
     return [0]
 elif n == 1:
-    return [0, 1]
+    return [1]
 else:
-    fib_series = [0, 1]
+    fib_series = []
     a, b = 0, 1
     for i in range(n):
         a, b = b, a+b
-        fib_series.append(b)
+        fib_series.append(a)
     return fib_series
 
 @memoize
@@ -27,13 +27,13 @@ Generate fibonacci series using memoized caching
 if n == 0:
     return [0]
 elif n == 1:
-    return [0, 1]
+    return [1]
 else:
-    fib_series = [0, 1]
+    fib_series = []
     a, b = 0, 1
     for i in range(n):
         a, b = b, a+b
-        fib_series.append(b)
+        fib_series.append(a)
     return fib_series
  
 
