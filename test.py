@@ -2,7 +2,7 @@ from .caching import lru_cahce, memoize
 from timeit import timeit
 
 
-@lru_cache(None):
+@lru_cache(None)
 def fib_lru_cache(n):
 """
 Generate fibonacci series using lru caching mechanism
